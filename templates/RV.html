@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion RV</title>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='1.jpg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='RV.css') }}">
+</head>
+<body>
+    <header>
+        <h1>RV</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('pagina2') }}">RA</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="vr-area">
+            <h2>VR (Realidad Virtual)</h2>
+            
+            <div class="vr-models-container">
+                <!-- Primer modelo -->
+                <div class="vr-model-wrapper">
+                    <div class="vr-container">
+                        <iframe src="https://sketchfab.com/models/056cd50f3769473d8789ad865fd1066c/embed?autostart=1&cardboard=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                    <h3>Modelo A</h3>
+                    <a href="https://sketchfab.com/models/056cd50f3769473d8789ad865fd1066c/embed?autostart=1&cardboard=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" target="_blank" class="sketchfab-link">
+                        <i class="fas fa-vr-cardboard"></i> Ver en Pantalla Grande
+                    </a>
+                </div>
+                
+                <!-- Segundo modelo -->
+                <div class="vr-model-wrapper">
+                    <div class="vr-container">
+                        <iframe src="https://sketchfab.com/models/3b38537b2ff1405fa40668fc2847f221/embed?autostart=1&cardboard=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                    <h3>Modelo B</h3>
+                    <a href="https://sketchfab.com/models/3b38537b2ff1405fa40668fc2847f221/embed?autostart=1&cardboard=1" target="_blank" class="sketchfab-link">
+                        <i class="fas fa-vr-cardboard"></i> Ver en Pantalla Grande
+                    </a>
+                </div>
+                
+                <!-- Tercer modelo -->
+                <div class="vr-model-wrapper">
+                    <div class="vr-container">
+                        <iframe src="https://sketchfab.com/models/2a2a68af17204ed18544a59837a48174/embed?autostart=1&cardboard=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                    <h3>Modelo C</h3>
+                    <a href="https://sketchfab.com/models/2a2a68af17204ed18544a59837a48174/embed?autostart=1&cardboard=1" target="_blank" class="sketchfab-link">
+                        <i class="fas fa-vr-cardboard"></i> Ver en Pantalla Grande
+                    </a>
+                </div>
+            </div>
+            
+            <div class="vr-info">
+                <h3>Experiencia de Realidad Virtual</h3>
+                <p>Sumérgete en un mundo virtual donde puedes interactuar con objetos tridimensionales y explorar entornos inmersivos.</p>
+                <p>Para una mejor experiencia, haz clic en el botón "Pantalla Grande" debajo de cada modelo para abrirlo directamente en Sketchfab, donde podrás utilizar tu visor de realidad virtual en tu dispositivo móvil.</p>
+                <p><strong>Instrucciones:</strong> Al abrir en pantalla grande , podrás interactuar completamente con él, rotar, hacer zoom para una experiencia inmersiva, esto solo es para celulares.</p>
+            </div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='rv.js') }}"></script>
+</body>
+</html>

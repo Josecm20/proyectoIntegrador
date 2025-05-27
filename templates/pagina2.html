@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion RA</title>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='1.jpg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pagina2.css') }}">
+</head>
+<body>
+    <header>
+        <h1>RA</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('RV') }}">RV</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="vr-area">
+            <div class="izquierda">
+                <h2>AR (Realidad Aumentada, solo funciona para celulares)</h2>
+                
+                <!-- Sección de imágenes -->
+                <div class="ar-container">
+                    <div class="ar-image">
+                        <img src="{{ url_for('static', filename='A.jpg') }}" alt="AR Image A-E">
+                    </div>
+                    <div class="ar-image">
+                        <img src="{{ url_for('static', filename='B.jpg') }}" alt="AR Image F-J">
+                    </div>
+                    <div class="ar-image">
+                        <img src="{{ url_for('static', filename='C.jpg') }}" alt="AR Image K-Ñ">
+                    </div>
+                    <div class="ar-image">
+                        <img src="{{ url_for('static', filename='D.jpg') }}" alt="AR Image O-S">
+                    </div>
+                    
+                </div>
+                
+                <!-- Sección de enlaces después de todas las imágenes -->
+                <div class="links-container">
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/l4wDxy" target="_blank">A-E: https://player.onirix.com/exp/l4wDxy</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/LkY9RY" target="_blank">F-J: https://player.onirix.com/exp/LkY9RY</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/LxaD58" target="_blank">K-Ñ: https://player.onirix.com/exp/LxaD58</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/LJDMbM" target="_blank">O-S: https://player.onirix.com/exp/LJDMbM</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/e1NJ66" target="_blank">T-X: https://player.onirix.com/exp/e1NJ66</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://player.onirix.com/exp/lK1rba" target="_blank">Y-Z: https://player.onirix.com/exp/lK1rba</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

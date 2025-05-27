@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Lenguaje de Señas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='1.jpg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pagina.css') }}">
+</head>
+<body>
+    <header>
+        <h1>COMUNICACIÓN SIN BARRERAS</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('pagina2') }}">RA</a></li>
+                <li><a href="{{ url_for('RV') }}">RV</a></li>
+                <li><a href="javascript:void(0);" onclick="mostrarMensaje()">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="traduccion" id="seccionTraduccion">
+            <h2>Traducir</h2>
+            <div class="input-area">
+                <textarea placeholder="Ingrese texto" id="inputText"></textarea>
+            </div>
+        </section>
+
+        <section id="imageContainer"></section>
+
+        <section class="vr-area" id="seccionCamara" style="display: none;">
+            <h2>Detección de letras</h2>
+            <div class="camara">
+                <video id="video" width="640" height="480" autoplay></video>
+            </div>
+            <div class="letra-detectada">
+                <p>Letra detectada: <span id="letraDetectada"></span></p>
+            </div>
+            <button id="startCameraBtn"><i class="fas fa-camera"></i> Activar Cámara</button>
+        </section>
+    </main>
+
+    <div class="controls">
+        <a href="{{ url_for('camara') }}"><button id="swapBtn"><i class="fas fa-swap-alt"></i> Intercambiar</button></a>
+        <button id="clearBtn"><i class="fas fa-eraser"></i> Limpiar texto</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script>
+        function mostrarMensaje() {
+            alert("Esta página consiste en colocar letras para que al momento de dar al botón de traducir te proporcione imágenes que representan esa palabra en lenguaje de señas mexicano. Si presionamos el botón de intercambiar nos mandará a una página en la cual es la traducción de gestos a texto. Como dato extra, cuando estés en la página de gestos a texto, coloca las manos a una distancia de 15 cm.");
+        }
+    </script>
+
+    
+</body>
+</html>

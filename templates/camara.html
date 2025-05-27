@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página de la Cámara - Lenguaje de Señas</title>
+  <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='1.jpg') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='camara.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>COMUNICACIÓN SIN BARRERAS</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="gesture-carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/A/a.jpeg') }}" alt="Gesto para la letra A">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/B/b.jpeg') }}" alt="Gesto para la letra B">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/C/c.jpeg') }}" alt="Gesto para la letra C">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/D/d.jpeg') }}" alt="Gesto para la letra D">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/E/e.jpeg') }}" alt="Gesto para la letra E">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/F/f.jpeg') }}" alt="Gesto para la letra F">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/G/g.jpeg') }}" alt="Gesto para la letra G">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/H/h.jpeg') }}" alt="Gesto para la letra H">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/I/i.jpeg') }}" alt="Gesto para la letra I">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/J/j.jpeg') }}" alt="Gesto para la letra J">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/K/k.jpeg') }}" alt="Gesto para la letra K">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/L/l.jpeg') }}" alt="Gesto para la letra L">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/M/m.jpeg') }}" alt="Gesto para la letra M">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/N/n.jpeg') }}" alt="Gesto para la letra N">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/O/o.jpeg') }}" alt="Gesto para la letra O">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/P/p.jpeg') }}" alt="Gesto para la letra P">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Q/q.jpeg') }}" alt="Gesto para la letra Q">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/R/r.jpeg') }}" alt="Gesto para la letra R">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/S/s.jpeg') }}" alt="Gesto para la letra S">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/T/t.jpeg') }}" alt="Gesto para la letra T">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/U/u.jpeg') }}" alt="Gesto para la letra U">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/V/v.jpeg') }}" alt="Gesto para la letra V">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/W/w.jpeg') }}" alt="Gesto para la letra W">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/X/x.jpeg') }}" alt="Gesto para la letra X">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Y/y.jpeg') }}" alt="Gesto para la letra Y">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Z/z.jpeg') }}" alt="Gesto para la letra Z">
+            </div>
+            <!-- Elementos duplicados para hacer el carrusel cíclico -->
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/A/a.jpeg') }}" alt="Gesto para la letra A">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/B/b.jpeg') }}" alt="Gesto para la letra B">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/C/c.jpeg') }}" alt="Gesto para la letra C">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/D/d.jpeg') }}" alt="Gesto para la letra D">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/E/e.jpeg') }}" alt="Gesto para la letra E">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/F/f.jpeg') }}" alt="Gesto para la letra F">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/G/g.jpeg') }}" alt="Gesto para la letra G">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/H/h.jpeg') }}" alt="Gesto para la letra H">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/I/i.jpeg') }}" alt="Gesto para la letra I">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/J/j.jpeg') }}" alt="Gesto para la letra J">
+            </div>
+        </div>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+  <main>
+    <section class="vr-area">
+      <h2>Gestos a Letras</h2>
+
+      <div class="camara">
+        <video id="video" width="640" height="480" autoplay></video>
+      </div>
+
+      <div class="letra-detectada">
+        <p><strong>Letra actual:</strong> <span id="letraDetectada"></span></p>
+      </div>
+
+      <div class="palabra-detectada">
+        <h3>Palabra:</h3>
+        <p><span id="palabraDetectada"></span></p>
+      </div>
+
+      <div class="botones-palabra">
+        <button id="clearWordBtn"><i class="fas fa-trash-alt"></i> Limpiar Palabra</button>
+        <button id="createLetterBtn"><i class="fas fa-plus-circle"></i> Crear Letra</button>
+      </div>
+
+      <div class="botones-camara">
+        <button id="requestPermissionBtn"><i class="fas fa-shield-alt"></i> Permisos Cámara</button>
+        <button id="startCameraBtn"><i class="fas fa-camera"></i> Activar Cámara</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script>
+    // CONTROL DEL CAROUSEL
+    document.addEventListener('DOMContentLoaded', () => {
+      const carousel = document.querySelector('.gesture-carousel');
+      const carouselInner = carousel.querySelector('.carousel-inner');
+      const items = carousel.querySelectorAll('.carousel-item');
+      const prevBtn = carousel.querySelector('.carousel-control.prev');
+      const nextBtn = carousel.querySelector('.carousel-control.next');
+      
+      const totalItems = items.length;
+      let position = 0;
+      let interval;
+      
+      const getVisibleItems = () => {
+        if (window.innerWidth <= 576) return 1;
+        if (window.innerWidth <= 768) return 2;
+        if (window.innerWidth <= 992) return 3;
+        if (window.innerWidth <= 1900) return 4;
+        return 5;
+      };
+      
+      const moveCarousel = (direction) => {
+        const visible = getVisibleItems();
+        
+        // Implementación mejorada para bucle infinito
+        position = position + direction;
+        
+        // Si llegamos al final, saltamos al principio sin animación
+        if (position >= totalItems - visible) {
+          position = 0;
+          carouselInner.style.transition = 'none';
+          carouselInner.style.transform = `translateX(0%)`;
+          // Forzar reflow para que el navegador procese el cambio
+          carouselInner.offsetHeight;
+          // Restaurar la transición
+          carouselInner.style.transition = 'transform 0.5s ease';
+        }
+        
+        // Si vamos hacia atrás y estamos al principio, saltamos al final
+        if (position < 0) {
+          position = totalItems - visible - 1;
+          carouselInner.style.transition = 'none';
+          const slideWidth = 100 / visible;
+          carouselInner.style.transform = `translateX(-${position * slideWidth}%)`;
+          carouselInner.offsetHeight;
+          carouselInner.style.transition = 'transform 0.5s ease';
+        }
+        
+        const slideWidth = 100 / visible;
+        carouselInner.style.transform = `translateX(-${position * slideWidth}%)`;
+      };
+      
+      const startCarousel = () => {
+        stopCarousel(); // Limpiar cualquier intervalo existente
+        interval = setInterval(() => moveCarousel(1), 1000);
+      };
+      
+      const stopCarousel = () => {
+        if (interval) {
+          clearInterval(interval);
+          interval = null;
+        }
+      };
+      
+      nextBtn.addEventListener('click', () => {
+        stopCarousel();
+        moveCarousel(1);
+        startCarousel();
+      });
+      
+      prevBtn.addEventListener('click', () => {
+        stopCarousel();
+        moveCarousel(-1);
+        startCarousel();
+      });
+      
+      carousel.addEventListener('mouseenter', stopCarousel);
+      carousel.addEventListener('mouseleave', startCarousel);
+      
+      window.addEventListener('resize', () => {
+        const visible = getVisibleItems();
+        if (position > totalItems - visible) position = totalItems - visible;
+        moveCarousel(0);
+      });
+      
+      startCarousel();
+    });
+  </script>
+</body>
+</html>
