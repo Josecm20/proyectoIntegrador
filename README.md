@@ -7,7 +7,7 @@ _Proyecto de traductor de lenguaje de señas en español basado en Python con Op
 
 ### Requisitos 🔧
 
-_Python 3.8 o inferior para evitar errores._
+_Python 3.12 o inferior para evitar errores._
 
 ### Instalación 🔧
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Una vez que las bibliotecas estén instaladas, escribe en tu terminal en la ubicación raíz del repositorio:
 
 ```bash
-python app.py
+python app_web.py
 ```
 
 ### Construido con 🛠️
@@ -34,9 +34,7 @@ NumPy - Utilizado para generar la normalización de coordenadas.
 Por favor, contacta a Contacto para obtener detalles sobre nuestro código de conducta y el proceso para enviar solicitudes de extracción.
 
 ### Autores ✒️
-Cesar Ortiz - Cesar Ortiz
-Jahaziel Hernandez - Jahaziel Hernandez
-Licencia 📄
+Jose Cortes Martinez 📄
 Este proyecto está bajo la Licencia Creative Commons Attribution. Consulta el archivo LICENSE.md para obtener más detalles.
 
 ### Expresiones de Gratitud 🎁
